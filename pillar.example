@@ -5,4 +5,5 @@ httpd:
   conf_dir: /etc/httpd/conf.d/
   # Remove server info and version
   production: True
+  # Add mod_ssl and remove SSL Weak ciphers
   ssl: True
