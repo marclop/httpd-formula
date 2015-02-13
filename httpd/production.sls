@@ -1,0 +1,12 @@
+{% from "httpd/map.jinja" import apache with context %}
+
+httpd_harden:
+  file.managed:
+    - name: {{ httpd.conf_dir }}/harden.conf
+    - source: salt://httpd/templates/harden.conf
+    - mode: 644
+    - user: root
+    - group: root
+    - require: {{ httpd.server }}
+    - watch_in:
+      - service: {{ httpd.service }}

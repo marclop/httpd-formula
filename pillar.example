@@ -1,0 +1,8 @@
+httpd:
+  server: httpd
+  service: httpd
+  conf: /etc/httpd/conf/httpd.conf
+  conf_dir: /etc/httpd/conf.d/
+  # Remove server info and version
+  production: True
+  ssl: True
