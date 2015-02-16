@@ -2,12 +2,16 @@
     'Debian': {
         'server': 'apache2',
         'service': 'apache2',
-         'conf': '/etc/apache2/apache.conf',
+        'conf': '/etc/apache2/apache.conf',
+        'enabled': 'True',
+        'start': 'True',
     },
     'RedHat': {
         'server': 'httpd',
         'service': 'httpd',
         'conf': '/etc/httpd/conf/httpd.conf',
-        'conf_dir': '/etc/httpd/conf.d'
+        'conf_dir': '/etc/httpd/conf.d',
+        'enabled': 'True',
+        'start': 'True',
     },
 }, merge=salt['pillar.get']('apache:lookup'), default='RedHat') %}

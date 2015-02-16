@@ -5,7 +5,7 @@ httpd_pkg:
     - name: {{ httpd.server }}
   service.running:
     - name: {{ httpd.service }}
-    - enable: True
+    - enable: {{ httpd.enabled }}
     - reload: True
 
 {% if 'production' in pillar['httpd'] %}
