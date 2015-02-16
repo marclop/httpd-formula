@@ -2,16 +2,16 @@
 
 Formula to set up the Apache httpd server. Made for RHEL family although the base httpd state can work with Debian servers as well.
 
-.. note::
+### Note
 
-    See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
+See the full [Salt Formulas installation and usage instructions](http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html)
 
 Available states
 ================
 
-.. contents::
-    :local:
+- httpd
+- httpd.production
+- httpd.ssl
 
 ``httpd``
 ------------
