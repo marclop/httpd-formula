@@ -1,4 +1,4 @@
-# Apache HTTPD formula
+# Apache httpd formula
 
 Formula to set up the Apache httpd server. Made for RHEL family although the base httpd state can work with Debian servers as well.
 
@@ -9,9 +9,9 @@ See the full [Salt Formulas installation and usage instructions](http://docs.sal
 Available states
 ================
 
-- httpd
-- httpd.production
-- httpd.ssl
+- [httpd](#httpd)
+- [httpd.production](#httpdproduction)
+- [httpd.ssl](#httpdssl)
 
 ``httpd``
 ------------
