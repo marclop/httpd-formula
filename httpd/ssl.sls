@@ -1,4 +1,4 @@
-{% from "httpd/map.jinja" import apache with context %}
+{% from "httpd/map.jinja" import httpd with context %}
 
 httpd_ssl:
   pkg.installed:
