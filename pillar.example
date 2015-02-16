@@ -7,5 +7,6 @@ httpd:
   production: True
   # Add mod_ssl and remove SSL Weak ciphers
   ssl: True
+  ssl_name: mod_ssl
   # Service configuration
   enabled: True

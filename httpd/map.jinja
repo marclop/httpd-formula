@@ -5,6 +5,7 @@
         'conf': '/etc/apache2/apache.conf',
         'enabled': 'True',
         'start': 'True',
+        'ssl_name': 'apache2-common',
     },
     'RedHat': {
         'server': 'httpd',
@@ -13,5 +14,6 @@
         'conf_dir': '/etc/httpd/conf.d',
         'enabled': 'True',
         'start': 'True',
+        'ssl_name': 'mod_ssl',
     },
 }, merge=salt['pillar.get']('httpd:lookup'), default='RedHat') %}

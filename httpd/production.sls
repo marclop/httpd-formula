@@ -7,6 +7,7 @@ httpd_harden:
     - mode: 644
     - user: root
     - group: root
-    - require: {{ httpd.server }}
+    - require:
+      - pkg: {{ httpd.server }}
     - watch_in:
       - service: {{ httpd.service }}
